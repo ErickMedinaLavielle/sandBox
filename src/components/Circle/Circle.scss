@@ -1,0 +1,50 @@
+// .circle{
+//   height: 500px;
+//   width: 500px;
+//   border-color: black;
+//   border-style: dashed;
+//   position: relative;
+//   align-items: center;
+//   display: flex;
+//   justify-content: center;
+//   &-1{
+//     // height: 100px;
+//     // width: 100px;
+//     // background-color: transparent;
+//     // border-color: red;
+//     // border-style: solid;
+//     // border-radius: 50%;
+//     // position: absolute;
+//     // animation-name: circle_1;
+//     // animation-duration: 2s;
+
+
+.circle{
+  height: 500px;
+    width: 500px;
+    border-color: black;
+    border-style: dashed;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  &-1 {
+    width: 100px;
+    height: 100px;
+    border-color: red;
+    border-style: solid;
+    border-radius: 50%;
+    background-color: transparent;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+    from {border-color: red ;}
+    to {border-color: yellow;}
+  }
+}
