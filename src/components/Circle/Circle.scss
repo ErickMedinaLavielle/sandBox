@@ -1,50 +1,59 @@
-// .circle{
-//   height: 500px;
-//   width: 500px;
-//   border-color: black;
-//   border-style: dashed;
-//   position: relative;
-//   align-items: center;
-//   display: flex;
-//   justify-content: center;
-//   &-1{
-//     // height: 100px;
-//     // width: 100px;
-//     // background-color: transparent;
-//     // border-color: red;
-//     // border-style: solid;
-//     // border-radius: 50%;
-//     // position: absolute;
-//     // animation-name: circle_1;
-//     // animation-duration: 2s;
-
-
 .circle{
-  height: 500px;
+    height: 500px;
     width: 500px;
     border-color: black;
     border-style: dashed;
-    position: relative;
     align-items: center;
-    display: flex;
     justify-content: center;
-  &-1 {
-    width: 100px;
-    height: 100px;
-    border-color: red;
-    border-style: solid;
+    position: relative;
+    display: flex;
+  &-1,&-2,&-3,&-4
+  ,&-5,&-6,&-7,&-8
+  ,&-9,&-10,&-11
+  ,&-12,&-13,&-14 {
+    position: absolute;
     border-radius: 50%;
-    background-color: transparent;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
+    border: 3px solid #73AD21;
+    animation-name: circle-1;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    margin-left: 100;
   }
-  
-  /* Standard syntax */
-  @keyframes example {
-    from {border-color: red ;}
-    to {border-color: yellow;}
+
+  &-1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation-name: circle-1;
+  }
+
+    /* Standard syntax */
+    @keyframes circle-1 {
+      0% {transform: rotate3d(0,0,0,0deg)}
+      100% {transform: rotate3d(1,0,0,360deg)}
+    }
+
+  &-2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    animation-name: circle-2;
+  }
+
+  @keyframes circle-2 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(0,1,0,360deg)}
+  }
+
+  &-3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    animation-name: circle-3;
+  }
+
+  @keyframes circle-3 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(5,1,0,360deg)}
   }
 }
