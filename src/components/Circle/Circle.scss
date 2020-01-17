@@ -16,15 +16,26 @@
     border: 3px solid #73AD21;
     animation-name: circle-1;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
+   // animation-iteration-count: infinite;
     margin-left: 100;
   }
 
   &-1{
-    position: absolute;
     width: 100px;
     height: 100px;
     animation-name: circle-1;
+
+    &-1{
+        width: 30px;
+        height: 30px;
+        background: yellow;
+        position: absolute;
+        border-radius: 100%;
+        transform-origin: center center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
   }
 
     /* Standard syntax */
@@ -42,7 +53,7 @@
 
   @keyframes circle-2 {
     0% {transform: rotate3d(0,0,0,0deg)}
-    100% {transform: rotate3d(0,1,0,360deg)}
+    100% {transform: rotate3d(1,1,1,360deg)}
   }
 
   &-3{
@@ -54,6 +65,6 @@
 
   @keyframes circle-3 {
     0% {transform: rotate3d(0,0,0,0deg)}
-    100% {transform: rotate3d(5,1,0,360deg)}
+    100% {transform: rotate3d(2,2,0,360deg)}
   }
 }
