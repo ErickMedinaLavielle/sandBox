@@ -13,22 +13,25 @@
   ,&-12,&-13,&-14 {
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #73AD21;
+    //border: 3px solid #73AD21;
     animation-name: circle-1;
-    animation-duration: 4s;
-   // animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     margin-left: 100;
   }
 
   &-1{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     animation-name: circle-1;
 
     &-1{
         width: 30px;
         height: 30px;
-        background: yellow;
+        margin-left: 100px;
+        background: transparent;
+        border-style: solid;
         position: absolute;
         border-radius: 100%;
         transform-origin: center center;
@@ -46,25 +49,155 @@
 
   &-2{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 75px;
+    height: 75px;
     animation-name: circle-2;
   }
 
   @keyframes circle-2 {
     0% {transform: rotate3d(0,0,0,0deg)}
-    100% {transform: rotate3d(1,1,1,360deg)}
+    100% {transform: rotate3d(0,1,0,360deg)}
   }
 
   &-3{
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     animation-name: circle-3;
   }
 
   @keyframes circle-3 {
     0% {transform: rotate3d(0,0,0,0deg)}
-    100% {transform: rotate3d(2,2,0,360deg)}
+    100% {transform: rotate3d(0,1,1,360deg)}
+  }
+  &-4{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    animation-name: circle-4;
+  }
+
+  @keyframes circle-4 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(1,1,0,360deg)}
+  }
+  &-5{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    animation-name: circle-5;
+  }
+
+  @keyframes circle-5 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(2,1,0,360deg)}
+  }
+
+  &-6{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    animation-name: circle-6;
+  }
+
+  @keyframes circle-6 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(2,2,1,360deg)}
+  }
+
+  &-7{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    animation-name: circle-7;
+  }
+
+  @keyframes circle-7 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(1,2,2,360deg)}
+  }
+
+  &-8{
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    animation-name: circle-8;
+  }
+
+  @keyframes circle-8 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(3,2,0,360deg)}
+  }
+
+  &-9{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    animation-name: circle-9;
+  }
+
+  @keyframes circle-9 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(3,2,1,360deg)}
+  }
+
+  &-10{
+    position: absolute;
+    width: 275px;
+    height: 275px;
+    animation-name: circle-10;
+  }
+
+  @keyframes circle-10 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(3,2,3,360deg)}
+  }
+
+  &-11{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    animation-name: circle-11;
+  }
+
+  @keyframes circle-11 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(2,3,2,360deg)}
+  }
+
+  &-12{
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    animation-name: circle-12;
+  }
+
+  @keyframes circle-12 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(5,4,3,360deg)}
+  }
+
+  &-13{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    animation-name: circle-4;
+  }
+
+  @keyframes circle-13 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(5,4,3,360deg)}
+  }
+
+  &-14{
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    animation-name: circle-14;
+  }
+
+  @keyframes circle-14 {
+    0% {transform: rotate3d(0,0,0,0deg)}
+    100% {transform: rotate3d(2,2,3,360deg)}
   }
 }
